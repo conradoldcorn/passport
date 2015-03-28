@@ -7,4 +7,9 @@ describe Passport do
     expect(passport).not_to have_travelled
   end
 
+  it 'knows when it has travelled' do
+    passport.travel!
+    expect(passport).to have_travelled
+  end
+
 end

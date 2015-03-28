@@ -8,4 +8,8 @@ class Passport
     !@travelled.nil?
   end
 
+  def travel!
+    @travelled = true
+  end
+
 end
