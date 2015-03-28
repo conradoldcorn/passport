@@ -21,4 +21,9 @@ describe Passport do
     expect(passport).to have_stamps
   end
 
+  it 'displays stamps' do
+    passport.stamp('Mauritius')
+    expect(passport.view_stamps).to include 'Mauritius'
+  end
+
 end

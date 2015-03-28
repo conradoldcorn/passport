@@ -21,4 +21,8 @@ class Passport
     @stamps << country
   end
 
+  def view_stamps
+    @stamps
+  end
+
 end
