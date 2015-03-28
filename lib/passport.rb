@@ -17,4 +17,8 @@ class Passport
     !@stamps.empty?
   end
 
+  def stamp(country) 
+    @stamps << country
+  end
+
 end

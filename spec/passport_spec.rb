@@ -16,4 +16,9 @@ describe Passport do
     expect(passport).not_to have_stamps
   end
 
+  it 'knows when it has stamps' do
+    passport.stamp('Mauritius')
+    expect(passport).to have_stamps
+  end
+
 end
